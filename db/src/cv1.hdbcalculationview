@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="cv1" applyPrivilegeType="NONE" dataCategory="CUBE" schemaVersion="3.0" outputViewType="Aggregation" cacheInvalidationPeriod="NONE" enforceSqlExecution="true">
+<descriptions defaultDescription="cv1"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="xyz">
+    <resourceUri>xyz</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+
+<logicalModel id="xyz">
+  <attributes>
+    <attribute id="A" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="A"/>
+      <keyMapping columnObjectName="xyz" columnName="A"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures>
+    <measure id="I" order="2" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="I"/>
+      <measureMapping columnObjectName="xyz" columnName="I"/>
+    </measure>
+  </baseMeasures>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+  <localDimensions/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+    
+  </shapes>
+</layout>
+</Calculation:scenario>

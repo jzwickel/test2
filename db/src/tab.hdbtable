@@ -1,0 +1,1 @@
+column table "xyz" (a nvarchar(20), i int)
